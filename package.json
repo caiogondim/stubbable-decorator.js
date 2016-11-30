@@ -1,0 +1,21 @@
+{
+  "name": "stubbable-decorator.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "decorator",
+    "stub",
+    "spy",
+    "test",
+    "sinon",
+    "module",
+    "export",
+    "default"
+  ],
+  "author": "Caio Gondim",
+  "license": "MIT"
+}
