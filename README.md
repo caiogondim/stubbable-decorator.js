@@ -8,9 +8,99 @@
 
 <br>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ipsa odio
-repellendus earum maiores adipisci delectus atque sit, perspiciatis expedita
-nobis assumenda labore et porro saepe culpa ipsum minus commodi?
+A decorator to make possible to stub modules in ECMAScript 2015+.
+
+## Installation
+
+```
+npm install -S @caiogondim/stubbable-decorator
+```
+
+## Usage
+
+### With a class
+
+```
+//
+// Module declaration
+//
+
+import stubbable from 'stubbable-decorator'
+
+class Foo {
+  constructor(bar) {
+    this.bar = bar
+  }
+}
+
+export default stubbable(Foo)
+
+// ---
+
+//
+// Testing
+//
+
+Foo.stub = sinon.stub().returns({})
+const obj = new Foo()
+expect(VHS.api.Poller.stub).calledOnce // 👍
+```
+
+### With a function
+
+```
+//
+// Module declaration
+//
+
+import stubbable from 'stubbable-decorator'
+
+function foo() { return 123 }
+
+export default stubbable(foo)
+
+// ---
+
+//
+// Testing
+//
+
+foo.stub = sinon.stub().returns(321)
+const result = foo()
+expect(result).to.be.equal(321) // 👍
+```
+
+### With a decorator
+
+In the current spec it is only possible to decorate classes and classes
+properties.
+
+```
+//
+// Module declaration
+//
+
+import stubbable from 'stubbable-decorator'
+
+@stubbable
+class Foo {
+  constructor(bar) {
+    this.bar = bar
+  }
+}
+
+export default Foo
+
+// ---
+
+//
+// Testing
+//
+
+Foo.stub = sinon.stub().returns({})
+const obj = new Foo()
+expect(VHS.api.Poller.stub).calledOnce // 👍
+```
 
 ## Credits
 - Icon by Sergey Demushkin from The Noun Project
