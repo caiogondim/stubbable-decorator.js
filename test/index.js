@@ -28,6 +28,26 @@ tap.test('class decorated and stubbed', (test) => {
   test.equal(stubbableInstance.constructor, Stub)
   test.equal(stubbableInstance instanceof Stub, true)
 
+  StubbableClass.stub = null
+  test.end()
+})
+
+tap.test('class decorated, stubbed, and de-stubbed', (test) => {
+  class Stub {
+    constructor (name) {
+      this.name = name
+    }
+  }
+  StubbableClass.stub = Stub
+  const stubbableInstance = new StubbableClass('foo')
+
+  test.equal(stubbableInstance.constructor, Stub)
+  test.equal(stubbableInstance instanceof Stub, true)
+
+  StubbableClass.stub = null
+  const stubbableInstance2 = new StubbableClass('foo')
+  test.equal(stubbableInstance2 instanceof StubbableClass.original, true)
+
   test.end()
 })
 
@@ -49,5 +69,6 @@ tap.test('function decorated and stubbed', (test) => {
 
   test.equal(result, 321)
 
+  stubbableFunction.stub = null
   test.end()
 })

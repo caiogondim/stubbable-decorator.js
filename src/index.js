@@ -5,10 +5,19 @@ const stubbable = (target, property, descriptor) => {
     }
 
     if (this instanceof facade) {
-      // eslint-disable-next-line new-cap
-      return new facade.stub(...args)
+      if (facade.stub) {
+        // eslint-disable-next-line new-cap
+        return new facade.stub(...args)
+      } else {
+        // eslint-disable-next-line new-cap
+        return new target(...args)
+      }
     } else {
-      return facade.stub(...args)
+      if (facade.stub) {
+        return facade.stub(...args)
+      } else {
+        return target(...args)
+      }
     }
   }
 
