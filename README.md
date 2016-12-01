@@ -20,7 +20,7 @@ npm install -S @caiogondim/stubbable-decorator
 
 ### With a class
 
-```
+```js
 //
 // Module declaration
 //
@@ -48,7 +48,7 @@ expect(VHS.api.Poller.stub).calledOnce // 👍
 
 ### With a function
 
-```
+```js
 //
 // Module declaration
 //
@@ -75,7 +75,7 @@ expect(result).to.be.equal(321) // 👍
 In the current spec it is only possible to decorate classes and classes
 properties.
 
-```
+```js
 //
 // Module declaration
 //
