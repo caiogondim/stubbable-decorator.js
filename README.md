@@ -34,9 +34,9 @@ class Foo {
 }
 
 export default stubbable(Foo)
+```
 
-// ---
-
+```js
 //
 // Testing
 //
@@ -58,9 +58,9 @@ import stubbable from 'stubbable-decorator'
 function foo() { return 123 }
 
 export default stubbable(foo)
+```
 
-// ---
-
+```js
 //
 // Testing
 //
@@ -90,9 +90,9 @@ class Foo {
 }
 
 export default Foo
+```
 
-// ---
-
+```js
 //
 // Testing
 //
