@@ -1,4 +1,4 @@
-<img src="http://rawgit.com/caiogondim/stubbable-decorator.js/master/docs/icon.svg">
+<img src="http://rawgit.com/caiogondim/stubbable-decorator.js/master/docs/icon/icon.svg">
 
 <h1 align="center">stubbable-decorator.js</h1>
 
