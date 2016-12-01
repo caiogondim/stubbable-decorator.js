@@ -1,5 +1,5 @@
 {
-  "name": "stubbable-decorator.js",
+  "name": "@caiogondim/stubbable-decorator",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -8,6 +8,11 @@
     "test:all": "npm run lint && npm run test",
     "lint": "eslint --fix 'src/**/*.js' 'test/**/*.js'"
   },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "src/index.js"
+  ],
   "keywords": [
     "decorator",
     "stub",
