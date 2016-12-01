@@ -2,7 +2,7 @@
   "name": "stubbable-decorator.js",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "babel-node test/index.js",
     "test:all": "npm run lint && npm run test",
