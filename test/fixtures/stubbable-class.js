@@ -1,8 +1,9 @@
 import stubbable from '../../src/'
 
+// eslint-disable-next-line
 @stubbable
 class StubbableClass {
-  constructor(prop) {
+  constructor (prop) {
     this.prop = prop
   }
 }

@@ -1,5 +1,4 @@
 import tap from 'tap'
-import stubbable from '../src'
 
 import StubbableClass from './fixtures/stubbable-class'
 import stubbableFunction from './fixtures/stubbable-function'
@@ -19,7 +18,9 @@ tap.test('class decorated not stubbed', (test) => {
 
 tap.test('class decorated and stubbed', (test) => {
   class Stub {
-    constructor() {}
+    constructor (name) {
+      this.name = name
+    }
   }
   StubbableClass.stub = Stub
   const stubbableInstance = new StubbableClass('foo')

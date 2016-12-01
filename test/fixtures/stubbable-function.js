@@ -1,6 +1,6 @@
 import stubbable from '../../src/'
 
-function stubbableFunction() {
+function stubbableFunction () {
   return 123
 }
 
