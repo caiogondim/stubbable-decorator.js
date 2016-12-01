@@ -104,3 +104,9 @@ expect(VHS.api.Poller.stub).calledOnce // 👍
 
 ## Credits
 - Icon by Sergey Demushkin from The Noun Project
+
+---
+
+[caiogondim.com](https://caiogondim.com) &nbsp;&middot;&nbsp;
+GitHub [@caiogondim](https://github.com/caiogondim) &nbsp;&middot;&nbsp;
+Twitter [@caio_gondim](https://twitter.com/caio_gondim)
