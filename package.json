@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "babel-node test/index.js"
   },
   "keywords": [
     "decorator",
@@ -17,5 +17,11 @@
     "default"
   ],
   "author": "Caio Gondim",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-latest": "^6.16.0",
+    "tap": "^8.0.1"
+  }
 }
