@@ -3,7 +3,7 @@
 <h1 align="center">stubbable-decorator.js</h1>
 
 <div align="center">
-<img src="http://travis-ci.org/caiogondim/stubbable-decorator.js.svg?branch=master" alt="Travis CI"> <img src="https://david-dm.org/caiogondim/stubbable-decorator.js/status.svg" alt="dependencies status"> <img src="https://img.shields.io/npm/v/@caiogondim/stubbable-decorator.svg" alt="npm version">
+<img src="http://travis-ci.org/caiogondim/stubbable-decorator.js.svg?branch=master" alt="Travis CI"> <img src="https://david-dm.org/caiogondim/stubbable-decorator.js/status.svg" alt="dependencies status"> <img src="https://img.shields.io/npm/v/stubbable-decorator.svg" alt="npm version">
 </div>
 
 <br>
@@ -13,7 +13,7 @@ A decorator to make possible to stub modules in ECMAScript 2015+.
 ## Installation
 
 ```
-npm install -S @caiogondim/stubbable-decorator
+npm install -S stubbable-decorator
 ```
 
 ## Usage

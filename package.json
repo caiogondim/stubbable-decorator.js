@@ -1,5 +1,5 @@
 {
-  "name": "@caiogondim/stubbable-decorator",
+  "name": "stubbable-decorator",
   "version": "1.0.2",
   "description": "Decorator make modules in ECMAScript 2015+ stubbable",
   "main": "src/index.js",
