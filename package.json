@@ -1,6 +1,6 @@
 {
   "name": "stubbable-decorator",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Decorator make modules in ECMAScript 2015+ stubbable",
   "main": "src/index.js",
   "scripts": {
