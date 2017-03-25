@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "Decorator make modules in ECMAScript 2015+ stubbable",
   "main": "src/index.js",
+  "types": "index.d.js",
   "scripts": {
     "test": "babel-node test/index.js | faucet",
     "test:all": "npm run lint && npm run test",
