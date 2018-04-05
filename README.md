@@ -1,8 +1,8 @@
 <img src="http://rawgit.com/caiogondim/stubbable-decorator.js/master/docs/icon/icon.svg">
 
-<h1 align="center">stubbable-decorator.js</h1>
+# stubbable-decorator
 
-<div align="center">
+<div>
 <img src="http://travis-ci.org/caiogondim/stubbable-decorator.js.svg?branch=master" alt="Travis CI"> <img src="https://david-dm.org/caiogondim/stubbable-decorator.js/status.svg" alt="dependencies status"> <img src="https://img.shields.io/npm/v/stubbable-decorator.svg" alt="npm version">
 </div>
 
